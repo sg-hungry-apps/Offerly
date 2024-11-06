@@ -1,0 +1,25 @@
+﻿@page "/offers"
+@using Microsoft.FluentUI.AspNetCore.Components
+@using Offerly.Domain.Models
+@attribute [StreamRendering]
+
+<PageTitle>Offers</PageTitle>
+
+<h1>Offers</h1>
+
+@if (getOffersError || offers is null)
+{
+    <p><em>Unable to get offers from Offerly. Please try again later.</em></p>
+}
+else
+{
+
+    <ul>
+        @foreach (var offer in offers)
+        {
+            <li>@offer.Id</li>
+            <li>@offer.CreatedDate</li>
+            <li>@offer.TotalAmount</li>
+        }
+    </ul>
+}
