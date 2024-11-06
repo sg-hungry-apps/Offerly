@@ -19,7 +19,7 @@ Technical notes:
 
 TODOs for the future:
 - Create api client project for frontend to use
-- Finish frontend using Blazor
+- Finish frontend using Blazor (didn't upload the frontend project since it wasn't functional)
 - Adding tests, for multiple parts of the project
 - Better validation for requests, as well as their structure
 - Add logging
